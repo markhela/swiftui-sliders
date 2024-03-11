@@ -41,6 +41,10 @@ public struct HorizontalValueSliderStyle<Track: View, Thumb: View>: ValueSliderS
                 } else {
                     track
                 }
+                
+                Capsule()
+                    .fill(Color(red: 245.0/256.0, green: 246.0/256.0, blue: 250.0/256.0))
+                    .frame(width: 1, height: 14)
 
                 ZStack {
                     self.thumb
